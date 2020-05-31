@@ -5,9 +5,9 @@
   
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://shandianchengzi.github.io/"/>
+  <link href="https://shandianchengzi.github.io/"/>
   <updated>2020-05-30T13:24:29.581Z</updated>
-  <id>http://shandianchengzi.github.io/</id>
+  <id>https://shandianchengzi.github.io/</id>
   
   <author>
     <name>John Doe</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>The frist try</title>
-    <link href="http://shandianchengzi.github.io/2020/05/30/The-frist-try/"/>
-    <id>http://shandianchengzi.github.io/2020/05/30/The-frist-try/</id>
+    <link href="https://shandianchengzi.github.io/2020/05/30/The-frist-try/"/>
+    <id>https://shandianchengzi.github.io/2020/05/30/The-frist-try/</id>
     <published>2020-05-30T10:10:00.000Z</published>
     <updated>2020-05-30T13:24:29.581Z</updated>
     
@@ -41,8 +41,8 @@
   
   <entry>
     <title>en</title>
-    <link href="http://shandianchengzi.github.io/2020/05/30/en/"/>
-    <id>http://shandianchengzi.github.io/2020/05/30/en/</id>
+    <link href="https://shandianchengzi.github.io/2020/05/30/en/"/>
+    <id>https://shandianchengzi.github.io/2020/05/30/en/</id>
     <published>2020-05-30T08:19:04.467Z</published>
     <updated>2020-05-30T08:19:28.776Z</updated>
     
@@ -64,8 +64,8 @@
   
   <entry>
     <title>Hello World</title>
-    <link href="http://shandianchengzi.github.io/2020/05/30/hello-world/"/>
-    <id>http://shandianchengzi.github.io/2020/05/30/hello-world/</id>
+    <link href="https://shandianchengzi.github.io/2020/05/30/hello-world/"/>
+    <id>https://shandianchengzi.github.io/2020/05/30/hello-world/</id>
     <published>2020-05-30T07:37:17.895Z</published>
     <updated>2020-05-30T08:09:39.363Z</updated>
     

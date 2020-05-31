@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Hexo</title>
+  <title>MINFIVE</title>
   
-  
+  <subtitle>MINFIVE BLOG</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://shandianchengzi.github.io/"/>
@@ -10,7 +10,7 @@
   <id>http://shandianchengzi.github.io/</id>
   
   <author>
-    <name>John Doe</name>
+    <name>[object Object]</name>
     
   </author>
   

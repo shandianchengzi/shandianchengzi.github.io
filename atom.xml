@@ -40,20 +40,20 @@
   </entry>
   
   <entry>
-    <title>The frist try</title>
+    <title>hexo-admin插件一键安装和部署（windows）</title>
     <link href="https://shandianchengzi.github.io/2020/05/30/The-frist-try/"/>
     <id>https://shandianchengzi.github.io/2020/05/30/The-frist-try/</id>
     <published>2020-05-30T10:10:00.000Z</published>
-    <updated>2020-05-31T10:30:13.588Z</updated>
+    <updated>2020-06-01T13:09:30.526Z</updated>
     
-    <content type="html"><![CDATA[<p>确认过眼神，hexo-admin是我想找的功能，赞呀，在线编辑！</p><h4 id="开始使用"><a href="#开始使用" class="headerlink" title="开始使用"></a>开始使用</h4><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">npm install --save hexo-admin</span><br><span class="line">hexo server -d</span><br><span class="line"><span class="built_in">open</span> http:<span class="comment">//localhost:4000/admin/</span></span><br></pre></td></tr></table></figure><p>首先，安装插件。<br>再打开服务。<br>最后打开localhost:4000/admin/即可编辑博文。  </p><h4 id="编辑之后呢？"><a href="#编辑之后呢？" class="headerlink" title="编辑之后呢？"></a>编辑之后呢？</h4><h6 id="保存并上传"><a href="#保存并上传" class="headerlink" title="保存并上传"></a>保存并上传</h6><p>admin插件这个网页会自动保存了编辑内容。（直接打开本地的md文档就能看到。）但是并没有直接deploy到博客上，没有上传到GitHub里。<br>这个时候环顾一下，理所当然点开admin网页导航栏的Deploy。然后蹦出来一个令人迷惑的页面。</p><p><img src="/images/pasted-0.png" alt=""></p><p>然后就<strong>Error: Config value “admin.deployCommand” not found了，慌不慌</strong>。<br>不要慌，Deploy之前，还需要编辑配置文件_config.yml。<br>如果是Windows则在末尾加上</p><p><img src="/images/pasted-1.png" alt=""></p><p>然后在同级目录新建hexo-pubish.bat文件，文件内容如下：</p><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo clean &amp;&amp; hexo g -d</span><br></pre></td></tr></table></figure><p>如果是Linux系统则参考Issues。<br>编辑完毕后，就可以点击Deploy，直接部署发布Github博客上。</p>]]></content>
+    <content type="html"><![CDATA[<p>确认过眼神，hexo-admin是我想找的功能，赞呀，在线编辑！</p><h4 id="根目录下-复制粘贴以下代码"><a href="#根目录下-复制粘贴以下代码" class="headerlink" title="根目录下 复制粘贴以下代码"></a>根目录下 复制粘贴以下代码</h4><pre><code class="c">npm install --save hexo-adminecho <span class="string">"hexo clean &amp;&amp; hexo g -d"</span>&gt;hexo-deploy.batecho admin:&gt;&gt;<span class="string">"_config.yml"</span>echo <span class="string">"  deployCommand: 'hexo-deploy.bat'"</span>&gt;&gt;<span class="string">"_config.yml"</span>hexo server -d</code></pre><p>然后在浏览器打开localhost:4000/admin/即可编辑博文。<br>编辑完直接左上角Deploy，跳出一个页面，什么也不用输入，直接点deploy按钮，就可以完成博客的部署。<br><strong>可能遇到的问题：</strong>如果每次都要输入密码，就查看一下你的_config.yml，里面的deploy的repo从http网址改为git@github类型。</p><h4 id="以下是代码解释"><a href="#以下是代码解释" class="headerlink" title="以下是代码解释"></a>以下是代码解释</h4><p>第一行，下载插件，<br>第二行，生成一个内容为”hexo clean &amp;&amp; hexo g -d”，名为”hexo-deploy”的bat文件，<br>第三、四行，配置_config.yml文件，<br>第五行，开启hexo服务。</p><h4 id="用admin插入图片"><a href="#用admin插入图片" class="headerlink" title="用admin插入图片"></a>用admin插入图片</h4><p>复制图片，粘贴到编辑页面。出现大概这样的东西：<br><code>![upload successful](\\images\pasted-2.png\)</code><br>,然后改成：<br><code>![upload successful](/images/pasted-2.png)</code>。就出图片了。<br><img src="/images/pasted-2.png" alt="upload successful"></p>]]></content>
     
     <summary type="html">
     
       
       
         &lt;p&gt;确认过眼神，hexo-admin是我想找的功能，赞呀，在线编辑！&lt;/p&gt;
-&lt;h4 id=&quot;开始使用&quot;&gt;&lt;a href=&quot;#开始使用&quot; class=&quot;headerlink&quot; title=&quot;开始使用&quot;&gt;&lt;/a&gt;开始使用&lt;/h4&gt;&lt;figure class=&quot;highlight 
+&lt;h4 id=&quot;根目录下-复制粘贴以下代码&quot;&gt;&lt;a href=&quot;#根目录下-复制粘贴以下代码&quot; class=&quot;headerlink&quot; title=&quot;根目录下 复制粘贴以下代码&quot;&gt;&lt;/a&gt;根目录下 复制
       
     
     </summary>

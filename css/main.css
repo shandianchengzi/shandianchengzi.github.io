@@ -1162,7 +1162,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #52ff69;
+  background: #ff6acc;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -2254,7 +2254,7 @@ hr {
   }
 }
 .menu .menu-item .badge {
-  background: #fff;
+  background: #00f;
   border-radius: 10px;
   color: #555;
   padding: 1px 4px;

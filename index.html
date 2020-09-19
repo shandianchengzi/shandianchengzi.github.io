@@ -129,7 +129,7 @@
   </li>
         <li class="menu-item menu-item-archives">
 
-    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>归档<span class="badge">7</span></a>
+    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>归档<span class="badge">8</span></a>
 
   </li>
   </ul>
@@ -154,6 +154,104 @@
             
 
   <div class="posts-expand">
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://shandianchengzi.github.io/2020/09/19/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E7%9A%84git%E7%A7%91%E6%99%AE/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="辩证使我痛并快乐">
+      <meta itemprop="description" content="林深时见鹿，海蓝时见鲸。封印或许打不开，或许不存在，无需多言。">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="深渊不见你">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/09/19/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E7%9A%84git%E7%A7%91%E6%99%AE/" class="post-title-link" itemprop="url">从零开始的git科普</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2020-09-19 23:17:48 / 修改时间：23:18:08" itemprop="dateCreated datePublished" datetime="2020-09-19T23:17:48+08:00">2020-09-19</time>
+            </span>
+
+          
+            <span id="/2020/09/19/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E7%9A%84git%E7%A7%91%E6%99%AE/" class="post-meta-item leancloud_visitors" data-flag-title="从零开始的git科普" title="阅读次数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span class="leancloud-visitors-count"></span>
+            </span>
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="fa fa-comment-o"></i>
+      </span>
+      <span class="post-meta-item-text">Valine：</span>
+    
+    <a title="valine" href="/2020/09/19/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E7%9A%84git%E7%A7%91%E6%99%AE/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2020/09/19/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E7%9A%84git%E7%A7%91%E6%99%AE/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>github使用非常简单，和百度一样用就行，也支持下载上传，多看看就能掌握基本操作，暂时不讲，先说git。</p>
+<h2 id="git"><a href="#git" class="headerlink" title="git"></a>git</h2><h5 id="1-下载"><a href="#1-下载" class="headerlink" title="1.下载"></a>1.下载</h5><p>链接：<a href="https://pan.baidu.com/s/1-QimGqEr7fLtpfkSP35waA" target="_blank" rel="noopener">https://pan.baidu.com/s/1-QimGqEr7fLtpfkSP35waA</a><br>提取码：b9lm<br>以上是我自己在用的Git-2.11.1-64-bit。<br>在<a href="https://git-scm.com/downloads" target="_blank" rel="noopener">官网上下载</a>也行，但是不推荐，因为官网下的也差不多，而且官网常常难以打开难以下载，容易链接失败，点一年都不一定能生成下载链接。（个人体验）<br><strong>然后按默认选项安装即可</strong>。</p>
+<h5 id="2-git内登录github账号"><a href="#2-git内登录github账号" class="headerlink" title="2.git内登录github账号"></a>2.git内登录github账号</h5><p>之后的不赘述，直接给链，廖雪峰大神讲得比我好。由于还在入门，我们只想简单知道git而不是立即搞事情，版本库可以先不建。后面的如何回退也可以不用看。登录成功就行。<br><a href="https://www.liaoxuefeng.com/wiki/896043488029600/896067074338496" target="_blank" rel="noopener">https://www.liaoxuefeng.com/wiki/896043488029600/896067074338496</a></p>
+<h5 id="3-github上不太方便而git很方便做的某些事"><a href="#3-github上不太方便而git很方便做的某些事" class="headerlink" title="3.github上不太方便而git很方便做的某些事"></a>3.github上不太方便而git很方便做的某些事</h5><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> xxx</span><br></pre></td></tr></table></figure>
+<p>xxx是github下载按钮处的链接。<br>还有的方便的就是用git删文件。直接在本地库上操作，再往上push一下就好了，这种需要建库的事情请继续看<a href="https://www.liaoxuefeng.com/wiki/896043488029600/896827951938304" target="_blank" rel="noopener">廖大佬的教程</a>。<br>如果看不懂的话，或者说有些基础指令有问题的话，请看下面的有关<strong>大学计算机基础</strong>的教程。</p>
+<h2 id="大学计算机基础"><a href="#大学计算机基础" class="headerlink" title="大学计算机基础"></a>大学计算机基础</h2><p>链接：<a href="https://pan.baidu.com/s/1-QimGqEr7fLtpfkSP35waA" target="_blank" rel="noopener">https://pan.baidu.com/s/1-QimGqEr7fLtpfkSP35waA</a><br>提取码：b9lm<br>以上还有我们计算机基础的课件。<br>这个是讲cmd之类的东西的，很多东西都是依赖这些指令的，所以建议随便看看用用。<br>其实吧，说起来就这么几条指令必用：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> ..</span><br><span class="line"><span class="built_in">cd</span> Desktop</span><br><span class="line">dir</span><br></pre></td></tr></table></figure>
+<p>第一条，退回上一级目录；<br>第二条，去下一级名字叫做Desktop也就是桌面的目录；<br>第三条，展示当前目录下的所有文件。</p>
+<p><strong>为什么说这三条是必备的</strong>，而不是删除之类的呢？<br>第一二条让你便捷地前后跳转，而第三条让你知道你现在能去哪。</p>
+<p>一级一级跳转有时候属实不便，所以建议再会一条指令，<code>cd 绝对路径</code></p>
+<blockquote>
+<p><strong>绝对路径</strong>：假设你已知能去的地方是长沙，同时假设最大的描述词是地球，绝对路径就是地球的中国的湖南的长沙。如E:\资料\大物\大物实验。<br><strong>相对路径</strong>：假设你在中国，你想去长沙，相对路径就是湖南的长沙。如大物\大物实验。</p>
+</blockquote>
+<p>前后跳转以及随便翻找就是我认为的文件结构了。</p>
+<h5 id="小彩蛋"><a href="#小彩蛋" class="headerlink" title="小彩蛋"></a>小彩蛋</h5><ol>
+<li>win+R -&gt; 输入taskmgr -&gt;方便清理后台进程，检查恶意弹窗广告，还电脑清净。</li>
+<li>在系统变量里的环境变量里添加某个文件夹，之后就可以直接用win+R并输入这个文件夹的相对路径，访问这个文件夹的内容。也就是，如果把快捷方式全部放到一个文件夹里并且为它添加环境变量，就可以<strong>用键盘呼出应用和资料，不需要鼠标点点点，也不用把快捷方式放桌面上</strong>。</li>
+</ol>
+<p>暂时想到这么多，之后再补充。</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
         
   
   
@@ -273,99 +371,6 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://shandianchengzi.github.io/2020/06/09/%E5%BF%83%E5%BE%97/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="辩证使我痛并快乐">
-      <meta itemprop="description" content="林深时见鹿，海蓝时见鲸。封印或许打不开，或许不存在，无需多言。">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="深渊不见你">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/06/09/%E5%BF%83%E5%BE%97/" class="post-title-link" itemprop="url">心得（已锁）</a>
-        </h1>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2020-06-09 14:38:00" itemprop="dateCreated datePublished" datetime="2020-06-09T14:38:00+08:00">2020-06-09</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-08-24 08:43:44" itemprop="dateModified" datetime="2020-08-24T08:43:44+08:00">2020-08-24</time>
-              </span>
-
-          
-            <span id="/2020/06/09/%E5%BF%83%E5%BE%97/" class="post-meta-item leancloud_visitors" data-flag-title="心得（已锁）" title="阅读次数">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-eye"></i>
-              </span>
-              <span class="post-meta-item-text">阅读次数：</span>
-              <span class="leancloud-visitors-count"></span>
-            </span>
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="fa fa-comment-o"></i>
-      </span>
-      <span class="post-meta-item-text">Valine：</span>
-    
-    <a title="valine" href="/2020/06/09/%E5%BF%83%E5%BE%97/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/2020/06/09/%E5%BF%83%E5%BE%97/" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          clock
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2020/06/09/%E5%BF%83%E5%BE%97/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-        
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="https://shandianchengzi.github.io/2020/06/09/%E6%A2%A6%E5%A2%83/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -436,6 +441,99 @@
           <!--noindex-->
             <div class="post-button">
               <a class="btn" href="/2020/06/09/%E6%A2%A6%E5%A2%83/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://shandianchengzi.github.io/2020/06/09/%E5%BF%83%E5%BE%97/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="辩证使我痛并快乐">
+      <meta itemprop="description" content="林深时见鹿，海蓝时见鲸。封印或许打不开，或许不存在，无需多言。">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="深渊不见你">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/06/09/%E5%BF%83%E5%BE%97/" class="post-title-link" itemprop="url">心得（已锁）</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-06-09 14:38:00" itemprop="dateCreated datePublished" datetime="2020-06-09T14:38:00+08:00">2020-06-09</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-08-24 08:43:44" itemprop="dateModified" datetime="2020-08-24T08:43:44+08:00">2020-08-24</time>
+              </span>
+
+          
+            <span id="/2020/06/09/%E5%BF%83%E5%BE%97/" class="post-meta-item leancloud_visitors" data-flag-title="心得（已锁）" title="阅读次数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span class="leancloud-visitors-count"></span>
+            </span>
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="fa fa-comment-o"></i>
+      </span>
+      <span class="post-meta-item-text">Valine：</span>
+    
+    <a title="valine" href="/2020/06/09/%E5%BF%83%E5%BE%97/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2020/06/09/%E5%BF%83%E5%BE%97/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          clock
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2020/06/09/%E5%BF%83%E5%BE%97/#more" rel="contents">
                 阅读全文 &raquo;
               </a>
             </div>
@@ -922,7 +1020,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">7</span>
+          <span class="site-state-item-count">8</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
